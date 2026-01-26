@@ -96,3 +96,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+A backend microservices-based reservation system that handles booking workflows and payment processing, exposes REST APIs, ensures secure transactions, and supports scalability, reliability, and service-to-service communication.”
