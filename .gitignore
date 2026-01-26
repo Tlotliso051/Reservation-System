@@ -1,0 +1,4 @@
+//ignore the dependancies
+node_modules
+dist
+.env
