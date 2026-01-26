@@ -1,4 +1,9 @@
-//ignore the dependancies
-node_modules
-dist
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
 .env
+.env.*
