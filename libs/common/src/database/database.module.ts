@@ -1,7 +1,6 @@
 import { DynamicModule, Module } from "@nestjs/common";
+import { ConfigModule, ConfigService } from "@nestjs/config";
 import { ModelDefinition, MongooseModule } from "@nestjs/mongoose";
-import { ConfigService } from "@nestjs/config";
-import { ConfigModule } from "../config";
 
 @Module({
   imports: [
