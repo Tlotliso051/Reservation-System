@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { ConfigModule as NestConfigModule } from "@nestjs/config";
+import { ConfigService, ConfigModule as NestConfigModule } from "@nestjs/config";
 import * as Joi from "joi";
 
 @Module({
@@ -10,5 +10,6 @@ import * as Joi from "joi";
       }),
     }),
   ],
+  exports: [ConfigService] // I am not sure if this is a great way to go about. please share insights if i need to globalize the config module, is is best to export the configService provider. willing to learn
 })
 export class ConfigModule {}
