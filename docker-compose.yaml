@@ -1,0 +1,22 @@
+services:
+  reservations:
+    build:
+      context: .
+      dockerfile: ./app/reservations/dockerfile
+      target: development
+    command: npm run start:dev reservations
+    ports:
+      -'3000:3000'
+    volumes:
+      -.:/usr/src/app
+  auth:
+    build:
+      build:
+      context: .
+      dockerfile: ./app/auth/dockerfile
+      target: development
+    command: npm run start:dev auth
+    ports:
+      -'3001:3001'
+    volumes:
+      -.:/usr/src/app
